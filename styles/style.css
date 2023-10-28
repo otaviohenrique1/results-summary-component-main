@@ -146,21 +146,25 @@ main {
 }
 
 .summary-card--reaction, .summary-card--reaction.summary-card-label {
+  background-color: hsla(0, 100%, 67%, .04);
   border-color: var(--light-red);
   color: var(--light-red);
 }
 
 .summary-card--memory, .summary-card--memory.summary-card-label {
+  background-color: hsla(39, 100%, 56%, .04);
   border-color: var(--orangey-yellow);
   color: var(--orangey-yellow);
 }
 
 .summary-card--verbal, .summary-card--verbal.summary-card-label {
+  background-color: hsla(166, 100%, 37%, .04);
   border-color: var(--green-teal);
   color: var(--green-teal);
 }
 
 .summary-card--visual, .summary-card--visual.summary-card-label {
+  background-color: hsla(234, 85%, 45%, .04);
   border-color: var(--cobalt-blue);
   color: var(--cobalt-blue);
 }
@@ -170,4 +174,16 @@ main {
   border: 0;
   border-radius: 100px;
   color: var(--white);
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 650px) {
+  main {
+    flex-direction: column;
+  }
+
+  .result,
+  .summary {
+    width: 89%;
+  }
 }
