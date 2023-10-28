@@ -2,35 +2,35 @@
     .attribution a { color: hsl(228, 45%, 44%); } */
 :root {
   /* Primary */
-  --light-red: hsl(0, 100%, 67%);
   /* Light red */
-  --orangey-yellow: hsl(39, 100%, 56%);
+  --light-red: hsl(0, 100%, 67%);
   /* Orangey yellow */
-  --green-teal: hsl(166, 100%, 37%);
+  --orangey-yellow: hsl(39, 100%, 56%);
   /* Green teal */
-  --cobalt-blue: hsl(234, 85%, 45%);
+  --green-teal: hsl(166, 100%, 37%);
   /* Cobalt blue */
+  --cobalt-blue: hsl(234, 85%, 45%);
 
   /* Gradients */
-  --light-slate-blue: hsl(252, 100%, 67%);
   /* Light slate blue (background) */
-  --light-royal-blue: hsl(241, 81%, 54%);
+  --light-slate-blue: hsl(252, 100%, 67%);
   /* Light royal blue (background) */
-  --violet-blue: hsla(256, 72%, 46%, 1);
+  --light-royal-blue: hsl(241, 81%, 54%);
   /* Violet blue (circle) */
-  --persian-blue: hsla(241, 72%, 46%, 0);
+  --violet-blue: hsla(256, 72%, 46%, 1);
   /* Persian blue (circle) */
+  --persian-blue: hsla(241, 72%, 46%, 0);
 
   /* ### Neutral */
 
-  --white: hsl(0, 0%, 100%);
   /* - White */
-  --pale-blue: hsl(221, 100%, 96%);
+  --white: hsl(0, 0%, 100%);
   /* - Pale blue */
-  --light-lavender: hsl(241, 100%, 89%);
+  --pale-blue: hsl(221, 100%, 96%);
   /* - Light lavender */
-  --dark-gray-blue: hsl(224, 30%, 27%);
+  --light-lavender: hsl(241, 100%, 89%);
   /* - Dark gray blue */
+  --dark-gray-blue: hsl(224, 30%, 27%);
 }
 
 body {
@@ -58,7 +58,8 @@ main {
   border-radius: 2rem;
 }
 
-.result, .summary {
+.result,
+.summary {
   width: 50%;
   /* width: 368px; */
   height: 512px;
@@ -71,6 +72,7 @@ main {
 
 .result-titulo {
   color: var(--light-lavender);
+  font-size: 1.4rem;
 }
 
 .result-score {
@@ -102,4 +104,70 @@ main {
   color: var(--light-lavender);
   width: 70%;
   text-align: center;
+}
+
+.summary-titulo,
+.summary-card {
+  width: 90%;
+  height: 10%;
+}
+
+.summary-botao {
+  width: 100%;
+  height: 10%;
+
+}
+
+.summary-titulo {
+  font-size: 1.4rem;
+}
+
+.summary-card {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  align-items: center;
+  border-radius: .75rem;
+}
+
+.summary-card-label {
+  display: flex;
+  align-items: center;
+  gap: .25rem;
+}
+
+.summary-card-score {
+  color: var(--light-lavender);
+}
+
+.summary-card-score span {
+  color: var(--dark-gray-blue);
+}
+
+.summary-card--reaction, .summary-card--reaction.summary-card-label {
+  border-color: var(--light-red);
+  color: var(--light-red);
+}
+
+.summary-card--memory, .summary-card--memory.summary-card-label {
+  border-color: var(--orangey-yellow);
+  color: var(--orangey-yellow);
+}
+
+.summary-card--verbal, .summary-card--verbal.summary-card-label {
+  border-color: var(--green-teal);
+  color: var(--green-teal);
+}
+
+.summary-card--visual, .summary-card--visual.summary-card-label {
+  border-color: var(--cobalt-blue);
+  color: var(--cobalt-blue);
+}
+
+.summary-botao {
+  background-color: var(--dark-gray-blue);
+  border: 0;
+  border-radius: 100px;
+  color: var(--white);
 }
