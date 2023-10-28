@@ -6,59 +6,70 @@
 /* .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); } */
 :root {
-  /* Primary */
-  /* Light red */
   --light-red: hsl(0, 100%, 67%);
-  /* Orangey yellow */
   --orangey-yellow: hsl(39, 100%, 56%);
-  /* Green teal */
   --green-teal: hsl(166, 100%, 37%);
-  /* Cobalt blue */
   --cobalt-blue: hsl(234, 85%, 45%);
-
-  /* Gradients */
-  /* Light slate blue (background) */
   --light-slate-blue: hsl(252, 100%, 67%);
-  /* Light royal blue (background) */
   --light-royal-blue: hsl(241, 81%, 54%);
-  /* Violet blue (circle) */
   --violet-blue: hsla(256, 72%, 46%, 1);
-  /* Persian blue (circle) */
   --persian-blue: hsla(241, 72%, 46%, 0);
-
-  /* ### Neutral */
-
-  /* - White */
   --white: hsl(0, 0%, 100%);
-  /* - Pale blue */
   --pale-blue: hsl(221, 100%, 96%);
-  /* - Light lavender */
   --light-lavender: hsl(241, 100%, 89%);
-  /* - Dark gray blue */
   --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-space-evenly {
+  justify-content: space-evenly;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.font-weight-500 {
+  font-weight: 500;
+}
+
+.font-weight-700 {
+  font-weight: 700;
+}
+
+.font-weight-800 {
+  font-weight: 800;
 }
 
 body {
   background-color: var(--pale-blue);
   width: 100vw;
-  display: flex;
-  justify-content: center;
   font-size: 18px;
+  font-family: "HankenGrotesk", sans-serif;
 }
 
 main {
-  /* width: 736px; */
-  /* height: 512px; */
   background-color: var(--white);
-  /* margin: auto; */
   margin-top: 10%;
-  display: flex;
   border-radius: 2rem;
 }
 
 .result {
-  /* --light-slate-blue: hsl(252, 100%, 67%);
-  --light-royal-blue: hsl(241, 81%, 54%); */
   background: linear-gradient(to bottom, var(--light-slate-blue), var(--light-royal-blue));
   border-radius: 2rem;
 }
@@ -66,34 +77,26 @@ main {
 .result,
 .summary {
   width: 50%;
-  /* width: 368px; */
   height: 512px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
   padding: 2rem;
 }
 
 .result-titulo {
   color: var(--light-lavender);
   font-size: 1.4rem;
+  font-weight: 700;
 }
 
 .result-score {
   background: linear-gradient(to bottom, var(--violet-blue), var(--persian-blue));
   width: 200px;
   height: 200px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   border-radius: 100px;
 }
 
 .result-score span:first-child {
   color: var(--white);
-  font-size: 5rem;
+  font-size: 5rem; 
 }
 
 .result-score span:last-child {
@@ -120,7 +123,7 @@ main {
 .summary-botao {
   width: 100%;
   height: 10%;
-
+  margin-top: 2rem;
 }
 
 .summary-titulo {
@@ -128,17 +131,12 @@ main {
 }
 
 .summary-card {
-  border: 1px solid black;
-  display: flex;
-  justify-content: space-between;
+  border: 1px solid;
   padding: 0 1rem;
-  align-items: center;
   border-radius: .75rem;
 }
 
 .summary-card-label {
-  display: flex;
-  align-items: center;
   gap: .25rem;
 }
 
@@ -177,7 +175,7 @@ main {
 .summary-botao {
   background-color: var(--dark-gray-blue);
   border: 0;
-  border-radius: 100px;
+  border-radius: 40px;
   color: var(--white);
   font-size: 1rem;
 }
