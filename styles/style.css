@@ -1,0 +1,105 @@
+/* .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); } */
+:root {
+  /* Primary */
+  --light-red: hsl(0, 100%, 67%);
+  /* Light red */
+  --orangey-yellow: hsl(39, 100%, 56%);
+  /* Orangey yellow */
+  --green-teal: hsl(166, 100%, 37%);
+  /* Green teal */
+  --cobalt-blue: hsl(234, 85%, 45%);
+  /* Cobalt blue */
+
+  /* Gradients */
+  --light-slate-blue: hsl(252, 100%, 67%);
+  /* Light slate blue (background) */
+  --light-royal-blue: hsl(241, 81%, 54%);
+  /* Light royal blue (background) */
+  --violet-blue: hsla(256, 72%, 46%, 1);
+  /* Violet blue (circle) */
+  --persian-blue: hsla(241, 72%, 46%, 0);
+  /* Persian blue (circle) */
+
+  /* ### Neutral */
+
+  --white: hsl(0, 0%, 100%);
+  /* - White */
+  --pale-blue: hsl(221, 100%, 96%);
+  /* - Pale blue */
+  --light-lavender: hsl(241, 100%, 89%);
+  /* - Light lavender */
+  --dark-gray-blue: hsl(224, 30%, 27%);
+  /* - Dark gray blue */
+}
+
+body {
+  background-color: var(--pale-blue);
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+}
+
+main {
+  /* width: 736px; */
+  /* height: 512px; */
+  background-color: var(--white);
+  /* margin: auto; */
+  margin-top: 10%;
+  display: flex;
+  border-radius: 2rem;
+}
+
+.result {
+  /* --light-slate-blue: hsl(252, 100%, 67%);
+  --light-royal-blue: hsl(241, 81%, 54%); */
+  background: linear-gradient(to bottom, var(--light-slate-blue), var(--light-royal-blue));
+  border-radius: 2rem;
+}
+
+.result, .summary {
+  width: 50%;
+  /* width: 368px; */
+  height: 512px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem;
+}
+
+.result-titulo {
+  color: var(--light-lavender);
+}
+
+.result-score {
+  background: linear-gradient(to bottom, var(--violet-blue), var(--persian-blue));
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+}
+
+.result-score span:first-child {
+  color: var(--white);
+  font-size: 5rem;
+}
+
+.result-score span:last-child {
+  color: var(--light-lavender);
+}
+
+.result-label {
+  color: var(--white);
+  font-size: 2rem;
+}
+
+.result-paragrafo {
+  color: var(--light-lavender);
+  width: 70%;
+  text-align: center;
+}
