@@ -58,14 +58,16 @@
 
 body {
   background-color: var(--pale-blue);
+  align-items: center;
   width: 100vw;
+  height: 100vh;
   font-size: 18px;
   font-family: "HankenGrotesk", sans-serif;
 }
 
 main {
   background-color: var(--white);
-  margin-top: 10%;
+  /* margin-top: 10%; */
   border-radius: 2rem;
 }
 
@@ -181,6 +183,11 @@ main {
 }
 
 @media screen and (max-width: 650px) {
+  body {
+    align-items: start;
+    justify-content: start;
+  }
+
   main {
     flex-direction: column;
     width: 368px;
@@ -189,5 +196,13 @@ main {
   .result,
   .summary {
     width: 82%;
+  }
+  
+  main {
+    border-radius: 0;
+  }
+
+  .result {
+    border-radius: 0 0 2rem 2rem;
   }
 }
